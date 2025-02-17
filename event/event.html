@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>イベント処理</title>
+</head>
+<body>
+    <button id="output-btn">文字列の出力</button>
+ 
+
+    <button id="add-btn">リスト追加</button>
+    <ul id="parent-list"></ul>
+    
+<!--フォームの文字数を出す-->
+    <form name="textForm">
+        <input type="text" name="textBox">
+      </form>
+      <button id="count-btn">文字数のカウント</button>
+
+<!--ラジオボタンの値を取得-->
+
+ <form name="areaForm">
+  <input type="radio" name="area" value="tokyo">東京都 
+  <input type="radio" name="area" value="osaka">大阪府
+  <input type="radio" name="area" value="aichi">愛知県
+ </form>
+ <button id="area-btn">値の取得</button></br>
+
+<!--チェックボックスの値を取得-->
+
+<form name="osForm">
+    <p>利用したことのあるOSを選択してください</p>
+    <input type="checkbox" id="windows" name="os" value="windows">
+    <label for="windows">Windows</label><br>
+    <input type="checkbox" id="macos" name="os" value="macos">
+    <label for="macos">macOS</label><br>
+    <input type="checkbox" id="linux" name="os" value="linux">
+    <label for="linux">Linux</label><br>
+    <input type="checkbox" id="ios" name="os" value="ios">
+    <label for="ios">iOS</label><br>
+    <input type="checkbox" id="android" name="os" value="android">
+    <label for="android">Android</label><br>
+</form>
+<button id="os-btn">値の取得</button>
+
+<!--
+<form name="osForm">
+    <label>利用したことのあるOSを選択してください</label><br>
+    <input type="checkbox" name="os" value="windows">Windows
+    <input type="checkbox" name="os" value="macos">macOS
+    <input type="checkbox" name="os" value="linux">Linux
+    <input type="checkbox" name="os" value="ios">iOS
+    <input type="checkbox" name="os" value="android">Android
+
+
+</from>
+<button id="os-btn">値の取得</button>
+
+-->
+<script src="event.js" defer></script>
+</body>
+</html>
